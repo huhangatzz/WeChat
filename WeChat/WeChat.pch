@@ -1,0 +1,21 @@
+//
+//  WeChat.pch
+//  WeChat
+//
+//  Created by huhang on 16/9/22.
+//  Copyright © 2016年 huhang. All rights reserved.
+//
+
+#ifndef WeChat_pch
+#define WeChat_pch
+
+#import <UIKit/UIKit.h>
+#import "WCAccount.h"
+#import "CategoryWF.h"
+#import "Singleton.h"
+#import "WCXMPPTool.h"
+#import "MBProgressHUD+HM.h"
+
+#import "Content.h"
+
+#endif /* WeChat_pch */
