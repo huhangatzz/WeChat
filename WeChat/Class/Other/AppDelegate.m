@@ -8,15 +8,20 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
-
-@end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    if ([WCAccount shareAccount].isLogin) {
+        id mainVC = [UIStoryboard initialVCWithName:@"Main"];
+        self.window.rootViewController = mainVC;
+        
+        //自动登录
+        [[WCXMPPTool sharedWCXMPPTool] xmppLogin:nil];
+    }
+    
     return YES;
 }
 
